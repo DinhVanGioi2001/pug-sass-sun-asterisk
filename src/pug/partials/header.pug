@@ -1,0 +1,24 @@
+header.navbar.navbar-expand-lg.navbar-light
+  .container
+    a.navbar-brand(href='#')
+      img.logo(src='/assets/images/logo.png' alt='Logo')
+
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+
+    .collapse.navbar-collapse#navbarCollapse.justify-content-md-end.justify-content-center
+      ul.navbar-nav.ml-auto.mb-0.text-center.text-lg-left
+        li.nav-item
+          a.nav-link.link-light.fw-bold.text-dark.px-4.text-primary(href='#') Home
+        li.nav-item
+          a.nav-link.link-light.fw-bold.text-dark.px-4(href='#') About
+        li.nav-item
+          a.nav-link.link-light.fw-bold.text-dark.px-4(href='#') Services
+        li.nav-item.dropdown
+          a.nav-link.link-light.fw-bold.text-dark.px-4.dropdown-toggle(data-bs-toggle='dropdown' href='#') Blog
+          ul.dropdown-menu
+            li: a.dropdown-item(href='#') About
+            li: a.dropdown-item(href='#') Contact
+            li: a.dropdown-item(href='#') Care
+        li.nav-item
+          a.nav-link.link-light.fw-bold.text-dark.px-4(href='#') Contact
