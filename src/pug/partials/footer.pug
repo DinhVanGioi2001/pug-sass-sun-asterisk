@@ -10,8 +10,9 @@ footer.text-center.text-lg-start.bg-light.text-muted.pt-5
   .container.text-center.text-md-start
     .row.mt-3
       .col-md-3.col-lg-4.col-xl-3.mx-auto.mb-4
-        h6.text-uppercase.fw-bold.mb-3.text-dark
-          | Velbox
+        a.text-decoration-none(href="/")
+          h6.text-uppercase.fw-bold.mb-3.text-dark
+            | Velbox
         .divider
         p.mt-3= description_footer
       .col-md-2.col-lg-2.col-xl-2.mx-auto.mb-4
@@ -36,5 +37,5 @@ footer.text-center.text-lg-start.bg-light.text-muted.pt-5
           | Info@example.com
 div.text-center.p-4.bg-light(style="background-color: rgba(0, 0, 0, 0.05);")
   | © 2023 Copyright: 
-  a.text-reset.fw-bold(href="/dist") Đinh Văn Giới
+  a.text-reset.fw-bold(href="/") Đinh Văn Giới
   |  All rights reserved

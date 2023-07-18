@@ -99,7 +99,7 @@ footer .container {
 }
 .section-feature .feature-item:hover i,
 .section-feature .feature-item:hover p,
-.section-feature .feature-item:hover h2 {
+.section-feature .feature-item:hover h3 {
   color: #fff;
 }
 .section-feature .feature-item:hover .divider {
