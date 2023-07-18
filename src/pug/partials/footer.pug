@@ -1,3 +1,11 @@
+-var description_footer = "All items listed here are developed by third-party developers & redistributed under the terms of the General Public License (GPL). GPL Times is not affiliated or related to any of the third-party developers or trademark owners."
+
+mixin list(title, h, c, ...items)
+  h6.text-uppercase.fw-bold.mb-4.text-dark= title
+  each item in items
+    p
+      a(href=h, class=c)= item
+
 footer.text-center.text-lg-start.bg-light.text-muted.pt-5
   .container.text-center.text-md-start
     .row.mt-3
@@ -5,30 +13,13 @@ footer.text-center.text-lg-start.bg-light.text-muted.pt-5
         h6.text-uppercase.fw-bold.mb-3.text-dark
           | Velbox
         .divider
-        p.mt-3
-          | All items listed here are developed by third-party 
-          | developers & redistributed under the terms of the General Public License (GPL). 
-          | GPL Times is not affiliated or related to any of the third-party developers or trademark owners.
+        p.mt-3= description_footer
       .col-md-2.col-lg-2.col-xl-2.mx-auto.mb-4
-        h6.text-uppercase.fw-bold.mb-4.text-dark Services
-        p
-          a(href="#!" class="text-reset") Web Development
-        p
-          a(href="#!" class="text-reset") Digital Marketing
-        p
-          a(href="#!" class="text-reset") Graphic Design
-        p
-          a(href="#!" class="text-reset") Web Hosting
+        +list('Services', '#', 'text-reset', 'Web Development', 'Digital Marketing', 'Graphic Design', 'Web Hosting')
+
       .col-md-3.col-lg-2.col-xl-2.mx-auto.mb-4
-        h6.text-uppercase.fw-bold.mb-4.text-dark About
-        p
-          a(href="#!" class="text-reset") Services
-        p
-          a(href="#!" class="text-reset") About Us
-        p
-          a(href="#!" class="text-reset") Pricing
-        p
-          a(href="#!" class="text-reset") Contact
+        +list('About', '#', 'text-reset', 'Services', 'About Us', 'Pricing', 'Contact')
+
       .col-md-4.col-lg-3.col-xl-3.mx-auto.mb-md-0.mb-4
         h6.text-uppercase.fw-bold.mb-4.text-dark Contact
         p

@@ -1,0 +1,22 @@
+- var title_service = "Best Web Services For"
+- var service_item = [{ title: 'Wordpress Development', description: 'Afraid we praise lively he suffer family estate is. Ample order up in of in ready. Timed blind had.'}, {title: 'Backup solution', description: 'Afraid we praise lively he suffer family estate is. Ample order up in of in ready. Timed blind had.'}, {title: 'Cloud Hosting', description: 'Afraid we praise lively he suffer family estate is. Ample order up in of in ready. Timed blind had.'}]
+
+.container.section-service.mb-5.d-flex.flex-column.justify-content-center.align-items-center.text-center.justify-content-lg-start.text-lg-start.align-items-lg-start
+  .welcome_elbox.px-3.p-1.mb-5.mt-5 Premium service solution
+
+  h2.fw-bold.text-dark.display-5= title_service
+  h2.fw-bold.text-primary.display-5 Effective Business
+
+  .container.mt-5
+    .row 
+      .col-lg-6
+        each item in service_item
+          .row.p-2
+            .col-12.d-flex.p-4.border.rounded
+              i.fa-brands.fa-wordpress
+              .content
+                h2.fw-bold.fs-5= item.title
+                p= item.description
+
+      .col-lg-6
+        img.w-100(src="./assets/images/illustration-3.png" alt="" srcset="")

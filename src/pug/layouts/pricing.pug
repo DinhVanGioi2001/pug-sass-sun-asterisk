@@ -1,0 +1,39 @@
+- var best_pricing = {'13$': 'Starter License', '23$': 'Standard License', '43$': 'Extended License'}
+
+mixin list
+  .divider
+  .list.mt-3
+    p.m-1 
+      i.fa-solid.fa-check  
+      | 1 end product
+    p.m-1 
+      i.fa-solid.fa-check  
+      | Use for personal or a client
+    p.m-1 
+      i.fa-solid.fa-check  
+      | Use in a free end product
+    p.m-1 
+      i.fa-solid.fa-check  
+      | 6 months technical support
+    p.m-1 
+      i.fa-solid.fa-check  
+      | 24 Hours support
+
+
+.container.d-flex.flex-column.justify-content-center.align-items-center.mt-5.p-5.px-md-0.px-2.section-pricing
+  .welcome_elbox.px-3.p-1.mb-5.mt-5 Pricing plan
+
+  h2.fw-bold.text-dark.display-5 Best Pricing Package
+  h2.fw-bold.text-primary.display-6 Start Business
+
+  .container
+    .row
+      each value, key in best_pricing
+        .col-md-6.col-lg-4
+          .best-pricing-item.p-5.mb-4.mg-lg-0
+            i.fa-solid.fa-layer-group.fs-1.text-primary.px-0.pb-4
+            h2.display-4.fw-bold= key
+            h2.fs-5.fw-bold.mt-3.mb-3= value
+            +list
+            button.btn.btn-primary.mt-4 Purchase Now
+

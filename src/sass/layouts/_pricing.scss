@@ -1,0 +1,16 @@
+.section-pricing {
+  .best-pricing-item {
+    background-color: #fff;
+    border-radius: 5px;
+
+    &:hover {
+      border: 1px solid $primary-color;
+    }
+
+    button {
+      display: block;
+      margin: 5px auto;
+      @include button-style;
+    }
+  }
+}

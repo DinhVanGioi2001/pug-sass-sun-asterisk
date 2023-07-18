@@ -3,7 +3,7 @@ html
   head
     meta(charset='UTF-8')
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-    title My Website
+    title Pug Sass Sun *
     link(
       rel= 'stylesheet' 
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
@@ -19,26 +19,26 @@ html
       crossorigin='anonymous'
     )
 
-    link(rel='stylesheet' href='./css/styles.css')
+    link(rel='stylesheet' href='./assets/css/styles.css')
   body
-    include includes/header.pug
-    .container__body
-      section.section.py-5
-        include includes/section1.pug
+    include ../partials/header.pug
 
-      section
-        include includes/feature-section1.pug
+    section.section-banner.py-5
+      include ../layouts/banner.pug
 
-      section
-        include includes/section2.pug
+    section
+      include ../layouts/feature.pug
 
-      section
-        include includes/section3.pug
+    section
+      include ../layouts/service.pug
 
-      section
-        include includes/section4.pug
+    section
+      include ../layouts/about.pug
 
-    include includes/footer.pug
+    section
+      include ../layouts/pricing.pug
+
+    include ../partials/footer.pug
 
     script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

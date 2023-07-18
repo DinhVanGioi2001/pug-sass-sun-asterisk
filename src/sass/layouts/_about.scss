@@ -1,0 +1,20 @@
+.section-about {
+  .number {
+    padding: 15px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $primary-color;
+  }
+
+  .content {
+    padding-left: 15px;
+    p {
+      font-size: 17px;
+      @extend %text-description;
+    }
+  }
+
+  .phone_free {
+    background-color: $primary-color;
+  }
+}

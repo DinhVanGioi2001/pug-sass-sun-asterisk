@@ -1,0 +1,53 @@
+.section-feature {
+  margin-top: -70px;
+
+  .feature-item {
+    background-color: #fefefe;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+
+    i {
+      font-size: 40px;
+      color: $primary-color;
+    }
+
+    p {
+      font-size: 17px;
+      @extend %text-description;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 100%;
+      z-index: -1;
+      background-color: $primary-color;
+      transition: all 0.7s ease;
+      color: #fff !important;
+      border-radius: 5px;
+      i {
+        color: #fff;
+      }
+    }
+    &:hover::before {
+      width: 100%;
+    }
+
+    &:hover {
+      i,
+      p,
+      h2 {
+        color: #fff;
+      }
+
+      .divider {
+        background-color: $secondary-body-color;
+      }
+    }
+  }
+}

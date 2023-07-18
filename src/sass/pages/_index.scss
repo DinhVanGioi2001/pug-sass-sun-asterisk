@@ -1,0 +1,17 @@
+@import "../layouts/header";
+@import "../layouts/footer";
+
+%text-description {
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+@import "../layouts/banner";
+
+@import "../layouts/feature";
+
+@import "../layouts/service";
+
+@import "../layouts/about";
+
+@import "../layouts/pricing";

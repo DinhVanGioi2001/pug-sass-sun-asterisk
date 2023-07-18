@@ -1,34 +1,22 @@
-const { src, dest, parallel, watch } = require('gulp');
+const gulp = require('gulp');
 const pug = require('gulp-pug');
 const sass = require('gulp-sass')(require('sass'));
 
-// Task để biên dịch Pug thành HTML
 function compilePug() {
-  return src('pages/*.pug')
+  return gulp.src('src/pug/pages/*.pug')
     .pipe(pug())
-    .pipe(dest('dist'));
+    .pipe(gulp.dest('./'));
 }
 
-// Task để biên dịch Sass thành CSS
 function compileSass() {
-  return src('sass/*.scss')
+  return gulp.src('src/sass/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(dest('dist/css'));
+    .pipe(gulp.dest('assets/css'));
 }
 
-// Task để biên dịch JavaScript
-// function compileJS() {
-//   return src('js/*.js')
-//     .pipe(dest('dist/js'));
-// }
-
-
-// Task watch để tự động biên dịch khi có thay đổi
 function watchFiles() {
-  watch('pages/**/*.pug', compilePug);
-  watch('sass/*.scss', compileSass);
-  // watch('js/*.js', compileJS);
+  gulp.watch('src/pug/**/*.pug', compilePug);
+  gulp.watch('src/sass/**/*.scss', compileSass);
 }
 
-// Task mặc định (chạy tất cả các task)
-exports.default = parallel(compilePug, compileSass, watchFiles);
+exports.default = gulp.series(gulp.parallel(compilePug, compileSass), watchFiles);

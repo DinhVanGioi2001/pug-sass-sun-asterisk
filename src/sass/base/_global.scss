@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body-color;
+  color: #333;
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+}
+
+.divider {
+  width: 30px;
+  height: 2px;
+  background-color: $primary-color;
+  margin: 5px 0;
+}
+
+.welcome_elbox {
+  width: fit-content;
+  border-radius: 15px;
+  background-color: $third-color;
+}
