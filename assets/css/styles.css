@@ -36,48 +36,48 @@ footer .container {
   border-bottom: 1px solid #4688f1;
 }
 
-.section-about .content p, .section-service .container .rounded p, .section-feature .feature-item p, .section-banner .lead {
+.about .content p, .service .container .rounded p, .feature .feature__item p, .banner .lead {
   font-weight: 400;
   opacity: 0.7;
 }
 
-.section-banner {
+.banner {
   padding-top: 50px;
   background-color: #e2e7f1;
 }
-.section-banner .row {
+.banner .row {
   margin-bottom: 70px;
 }
-.section-banner .lead {
+.banner .lead {
   font-size: 23px;
   margin-bottom: 40px;
 }
-.section-banner .button {
+.banner .button {
   background-color: #796eff;
   padding: 10px 20px;
   border-radius: 20px;
 }
-.section-banner .button:hover {
+.banner .button:hover {
   box-shadow: 2px 2px 5px 1px rgb(146, 146, 167);
 }
 
-.section-feature {
+.feature {
   margin-top: -70px;
 }
-.section-feature .feature-item {
+.feature .feature__item {
   background-color: #fefefe;
   border-radius: 5px;
   position: relative;
   z-index: 1;
 }
-.section-feature .feature-item i {
+.feature .feature__item i {
   font-size: 40px;
   color: #0b5be0;
 }
-.section-feature .feature-item p {
+.feature .feature__item p {
   font-size: 17px;
 }
-.section-feature .feature-item::before {
+.feature .feature__item::before {
   position: absolute;
   content: "";
   top: 0;
@@ -91,67 +91,67 @@ footer .container {
   color: #fff !important;
   border-radius: 5px;
 }
-.section-feature .feature-item::before i {
+.feature .feature__item::before i {
   color: #fff;
 }
-.section-feature .feature-item:hover::before {
+.feature .feature__item:hover::before {
   width: 100%;
 }
-.section-feature .feature-item:hover i,
-.section-feature .feature-item:hover p,
-.section-feature .feature-item:hover h3 {
+.feature .feature__item:hover i,
+.feature .feature__item:hover p,
+.feature .feature__item:hover h3 {
   color: #fff;
 }
-.section-feature .feature-item:hover .divider {
+.feature .feature__item:hover .divider {
   background-color: #e2e7f1;
 }
 
-.section-service {
+.service {
   margin-top: 30px;
 }
-.section-service .container .rounded i {
+.service .container .rounded i {
   font-size: 40px;
   color: #0b5be0;
   opacity: 0.7;
   margin-right: 15px;
 }
-.section-service .container .rounded p {
+.service .container .rounded p {
   font-size: 17px;
 }
-.section-service .container .rounded:hover {
+.service .container .rounded:hover {
   background-color: rgba(247, 255, 255, 0.8784313725);
   box-shadow: 2px 2px 10px 1px rgb(209, 208, 208);
 }
 
-.section-about .number {
+.about .number {
   padding: 15px;
   height: 50px;
   border-radius: 50%;
   background-color: #0b5be0;
 }
-.section-about .content {
+.about .content {
   padding-left: 15px;
 }
-.section-about .content p {
+.about .content p {
   font-size: 17px;
 }
-.section-about .phone_free {
+.about .phone_free {
   background-color: #0b5be0;
 }
 
-.section-pricing .best-pricing-item {
+.pricing .pricing__item {
   background-color: #fff;
   border-radius: 5px;
 }
-.section-pricing .best-pricing-item:hover {
+.pricing .pricing__item:hover {
   border: 1px solid #0b5be0;
 }
-.section-pricing .best-pricing-item button {
+.pricing .pricing__item button {
   display: block;
   margin: 5px auto;
   padding: 10px 20px;
   border-radius: 20px;
 }
-.section-pricing .best-pricing-item button:hover {
+.pricing .pricing__item button:hover {
   box-shadow: 2px 2px 5px 1px rgb(146, 146, 167);
 }

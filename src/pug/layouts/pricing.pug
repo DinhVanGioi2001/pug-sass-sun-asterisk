@@ -20,7 +20,7 @@ mixin list
       | 24 Hours support
 
 
-.container.d-flex.flex-column.justify-content-center.align-items-center.mt-5.p-5.px-md-0.px-2.section-pricing
+.container.d-flex.flex-column.justify-content-center.align-items-center.mt-5.p-5.px-md-0.px-2.pricing
   .welcome_elbox.px-3.p-1.mb-5.mt-5 Pricing plan
 
   h2.fw-bold.text-dark.display-5 Best Pricing Package
@@ -30,7 +30,7 @@ mixin list
     .row
       each value, key in best_pricing
         .col-md-6.col-lg-4
-          .best-pricing-item.p-5.mb-4.mg-lg-0
+          .pricing__item.p-5.mb-4.mg-lg-0
             i.fa-solid.fa-layer-group.fs-1.text-primary.px-0.pb-4
             h3.display-4.fw-bold= key
             p.fs-5.fw-bold.mt-3.mb-3= value
